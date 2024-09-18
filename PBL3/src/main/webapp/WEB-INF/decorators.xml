@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE decorators>
+<decorators xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	version="4.0">
+	<excludes>
+		<pattern>/api*</pattern>
+	</excludes>
+	
+	<decorator name="admin" page="/decorators/admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	
+	<decorator name="recruiter" page="/decorators/recruiter.jsp">
+		<pattern>/recruiter*</pattern>
+	</decorator>
+	
+	<decorator name="user" page="/decorators/user.jsp">
+		<pattern>/user*</pattern>
+	</decorator>
+	
+	<decorator name="login" page="/decorators/login.jsp">
+		<pattern>/login*</pattern>
+	</decorator>
+
+	<decorator name="register" page="/decorators/login.jsp">
+		<pattern>/register*</pattern>
+	</decorator>
+	
+	<decorator name="newPassword" page="/decorators/login.jsp">
+		<pattern>/newPassword*</pattern>
+	</decorator>
+	
+	<decorator name="web" page="/decorators/web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>
